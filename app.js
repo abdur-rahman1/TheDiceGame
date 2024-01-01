@@ -96,8 +96,7 @@ btnHold.addEventListener("click", function () {
 
 btnNew.addEventListener("click", function () {
   init();
-  document
-    .getElementById(`score--${activePlayer}`)
-    .classList.toggle("score--winner");
+document.getElementById("score--0").classList.remove("score--winner");
+  document.getElementById("score--1").classList.remove("score--winner");
   newGameSound.play();
 });
