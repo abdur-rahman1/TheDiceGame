@@ -73,7 +73,7 @@ btnHold.addEventListener("click", function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     //2.check if player's score is >=100;
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       document
         .getElementById(`score--${activePlayer}`)
         .classList.add("score--winner");
